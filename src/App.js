@@ -83,10 +83,10 @@ function App() {
                   {item.name}
                 </td>
                 <td className="border border-gray-300 px-4 py-3">
-                  {item.outcome.toLocaleString("vi")}
+                  {item.income.toLocaleString("vi")}
                 </td>
                 <td className="border border-gray-300 px-4 py-3">
-                  {item.income.toLocaleString("vi")}
+                  {item.outcome.toLocaleString("vi")}
                 </td>
               </tr>
             ))}
