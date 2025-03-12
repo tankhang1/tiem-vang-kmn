@@ -49,14 +49,6 @@ function App() {
   }, []);
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 to-yellow-300 shadow-inner py-10">
-      {isFullscreen && (
-        <button
-          onClick={() => setIsOpen(true)}
-          className="absolute top-10 left-5 p-2 rounded-lg bg-gray-100 hover:bg-gray-200 shadow transition duration-200 flex items-center justify-center"
-        >
-          <img src={EditIcon} className="w-6 h-6" alt="Edit" />
-        </button>
-      )}
       <h1 className="text-6xl md:text-7xl font-bold text-red-400 bg-clip-text bg-gradient-to-r from-red-400 to-red-700 drop-shadow-lg">
         ✨ TIỆM VÀNG, BẠC KIM MINH NGUYÊN ✨
       </h1>
@@ -83,6 +75,7 @@ function App() {
           <tbody>
             {listProducts.map((item, index) => (
               <tr
+                onClick={() => setIsOpen(true)}
                 key={index}
                 className="text-center border border-gray-300 text-gray-800 hover:bg-yellow-100 transition-colors text-3xl font-semibold uppercase"
               >
