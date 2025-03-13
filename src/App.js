@@ -50,7 +50,10 @@ function App() {
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 to-yellow-300 shadow-inner py-10">
       <h1 className="text-6xl md:text-7xl font-bold text-red-400 bg-clip-text bg-gradient-to-r from-red-400 to-red-700 drop-shadow-lg">
-        ✨ TIỆM VÀNG, BẠC KIM MINH NGUYÊN ✨
+        TIỆM VÀNG, BẠC
+      </h1>
+      <h1 className="text-6xl md:text-7xl font-bold text-red-400 bg-clip-text bg-gradient-to-r from-red-400 to-red-700 drop-shadow-lg">
+        ✨ KIM MINH NGUYÊN ✨
       </h1>
       <h4 className="text-3xl mt-2 font-semibold text-gray-800">
         Giá Vàng Bạc Hôm Nay: {dayjs().format("HH:mm:ss DD/MM/YYYY")}
